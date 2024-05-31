@@ -36,10 +36,11 @@ export default function Form() {
         className="flex w-full max-w-96 flex-col items-start gap-6 rounded-xl border bg-white p-8 shadow-md"
       >
         <div className="w-full space-y-2 text-gray-900">
-          <label htmlFor="" className="font-semibold">
+          <label htmlFor="email" className="font-semibold">
             Email
           </label>
           <input
+            id="email"
             type="email"
             {...register('email')}
             className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm "
@@ -52,10 +53,11 @@ export default function Form() {
         </div>
 
         <div className="w-full space-y-2 text-gray-900">
-          <label htmlFor="" className="font-semibold">
+          <label htmlFor="password" className="font-semibold">
             Senha
           </label>
           <input
+            id="password"
             type="password"
             {...register('password')}
             className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm"
